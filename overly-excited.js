@@ -25,24 +25,32 @@
 
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (theWordArray) {
+function addExcitement (theWordArray, character) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
         if ((i + 1) % 3 === 0) {
         /*  
             If the current word's place is evenly divisible by 3, add an exclamation point to the end and then concatenate it to `buildMeUp`. */
-            buildMeUp += theWordArray[i] + "! ";
+            buildMeUp += theWordArray[i] + `${character} `;
         }    
          /*
             Otherwise, just concatenate the word itself.
          */  
             else {
-                buildMeUp += theWordArray[i] + " ";
+                buildMeUp += theWordArray[i] + `${character} `;
             }
         console.log(buildMeUp)// Print buildMeUp to the console
     }
 
 }
 
-addExcitement(sentence)
+// addExcitement(sentence)
+
+// Question 3
+// Add a new argument to the function so that a developer can specify which character should be displayed instead of it always being an exclamation point.
+
+// I want to use a question mark
+addExcitement(sentence, "?")
+
+
