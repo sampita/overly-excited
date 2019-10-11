@@ -38,7 +38,7 @@ function addExcitement (theWordArray, character) {
             Otherwise, just concatenate the word itself.
          */  
             else {
-                buildMeUp += theWordArray[i] + `${character} `;
+                buildMeUp += theWordArray[i] + " ";
             }
         console.log(buildMeUp)// Print buildMeUp to the console
     }
